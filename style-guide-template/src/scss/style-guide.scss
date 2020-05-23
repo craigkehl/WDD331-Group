@@ -4,12 +4,11 @@
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #B4D2D9; // Cornflower Blue - Action color
-$color-2: #66858C; // Dark Teal
-$color-3: #8C7158; // Brown
-$color-4: #D9C5B4; // light Brown
-$color-5: #EDFCFF; // white Blue
-$color-6: red;
+$color-1: #B4D2D9; // Main Blue 
+$color-2: #66858C; // Dark Blue
+$color-3: #EDFCFF; // Lightest Blue - background
+$color-4: #8C7158; // Brown
+$color-5: #D9C5B4; // Tan
 
 // additional colors
 
@@ -28,7 +27,7 @@ xBackground
 
 body {
   /* this is the page background */
-  background-color: $color-5;
+  background-color: $color-3;
 }
 
 /* -------------------------------- 
@@ -41,7 +40,7 @@ xPatterns
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid $color-4;
   border-radius: 3px;
-  background: $color-5;
+  background: $color-3;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
 }
@@ -53,12 +52,12 @@ xNavigation
 -------------------------------- */
 
 header {
-  background-color: $color-2;
+  background-color: $color-1;
 }
 
 .cd-logo {
   /* logo box style */
-  background-color: $color-1;
+  background-color: $color-3;
   width: 120px;
 
   @include MQ(M) {
@@ -68,10 +67,10 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: $color-2;
+  background: $color-3;
 
   li a {
-    color: $color-5;
+    color: $color-2;
     border-color: lighten($color-2, 5%);
   }
 
@@ -80,8 +79,8 @@ header {
       color: lighten($color-2, 40%);
 
       &.selected {
-        color: $color-5;
-        box-shadow: 0 2px 0 $color-1;
+        color: $color-1;
+        box-shadow: 0 2px 0 $color-2;
       }
 
       &:hover {
@@ -93,12 +92,12 @@ header {
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: $color-5;
+  background-color: $color-3;
 
   &::before,
   &::after {
     /* upper and lower lines */
-    background-color: $color-5;
+    background-color: $color-3;
   }
 }
 
