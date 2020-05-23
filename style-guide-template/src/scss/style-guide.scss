@@ -16,8 +16,8 @@ $success: #6fce72; // green
 $alert: $color-3; // red
 
 // fonts
-$primary-font: 'Lobster', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Lobster', serif;
 
 /* -------------------------------- 
 
@@ -92,12 +92,12 @@ header {
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: $color-5;
+  background-color: $color-3;
 
   &::before,
   &::after {
     /* upper and lower lines */
-    background-color: $color-5;
+    background-color: $color-3;
   }
 }
 
