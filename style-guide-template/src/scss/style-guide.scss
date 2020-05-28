@@ -31,6 +31,9 @@ xPatterns
   background: $color-3;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
+  img {
+    width: 50%;
+  }
 }
 
 
@@ -39,7 +42,12 @@ xPatterns
 xPage title 
 
 -------------------------------- */
-
+header > div { 
+  background-color: $color-4;
+  & > img {
+  height: 90%;
+  }
+}
 main > h1 {
   color: $color-2;
 

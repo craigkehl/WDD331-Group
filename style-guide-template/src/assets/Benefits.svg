@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54.7 230.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #bd97c1;
+        stroke: #db3ce0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.3px;
+      }
+
+      .cls-3 {
+        font-size: 17px;
+      }
+
+      .cls-3, .cls-9 {
+        fill: #6d276d;
+        font-family: AcuminProExtraCond-Bold, Acumin Pro ExtraCondensed;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-9 {
+        font-size: 18px;
+      }
+
+      .cls-10 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0.03em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.52" y1="177.81" x2="55.15" y2="177.81" gradientTransform="matrix(1, 0, 0, -1, 0.01, 293.11)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#592d56"/>
+      <stop offset="0.16" stop-color="#f49bee"/>
+      <stop offset="0.86" stop-color="#f49bee"/>
+      <stop offset="1" stop-color="#70336c"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg2">
+      <g id="Top_left_pink">
+        <path id="path2995" class="cls-1" d="M3.1,0H54.7V230.6H0Z"/>
+        <rect id="rect3186" class="cls-2" x="2.7" y="181.4" width="50.4" height="34.3"/>
+        <rect id="rect3184" class="cls-2" x="4.6" y="15.4" width="48.1" height="25.8"/>
+        <text class="cls-3" transform="translate(6.99 203.38) rotate(1.2)"><tspan class="cls-4">B</tspan><tspan x="6.51" y="0">en</tspan><tspan class="cls-5" x="19.11" y="0">e</tspan><tspan class="cls-6" x="25.23" y="0">f</tspan><tspan class="cls-7" x="29" y="0">i</tspan><tspan class="cls-8" x="32.33" y="0">t</tspan><tspan class="cls-6" x="36.38" y="0">s</tspan></text>
+        <text class="cls-3" transform="matrix(1, 0.02, -0.02, 1, 8.32, 32.6)"><tspan class="cls-4">B</tspan><tspan x="6.51" y="0">en</tspan><tspan class="cls-5" x="19.11" y="0">e</tspan><tspan class="cls-6" x="25.23" y="0">f</tspan><tspan class="cls-7" x="29" y="0">i</tspan><tspan class="cls-8" x="32.33" y="0">t</tspan><tspan class="cls-6" x="36.38" y="0">s</tspan></text>
+        <text class="cls-9" transform="translate(22.23 70.53) rotate(90.22)">Why <tspan class="cls-10" x="25.33" y="0">P</tspan><tspan class="cls-11" x="31.84" y="0">a</tspan><tspan class="cls-12" x="38.32" y="0">r</tspan><tspan class="cls-13" x="43.63" y="0">t</tspan><tspan class="cls-11" x="47.79" y="0">i</tspan><tspan class="cls-14" x="51.21" y="0">c</tspan><tspan x="57.27" y="0">ipate?</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

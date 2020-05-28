@@ -124,7 +124,7 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: #EDFCFF;
+  background-color: #8C7158;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -143,7 +143,7 @@ header {
 }
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
-    color: #dae2e4;
+    color: #66858C;
   }
   .cd-main-nav li a.selected {
     color: #B4D2D9;
@@ -189,6 +189,55 @@ header {
   border-color: #B4D2D9;
 }
 
+div.cd-primary-nav {
+  display: block;
+}
+div.cd-primary-nav div {
+  display: inline-block;
+  width: 20%;
+  height: 100px;
+}
+div.cd-primary-nav div:first-child {
+  background-color: red;
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:first-child:hover {
+  width: 20%;
+}
+div.cd-primary-nav div:nth-child(2) {
+  background-image: url(/Whats_it_about.56a80a4c.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:nth-child(2):hover {
+  width: 20%;
+}
+div.cd-primary-nav div:nth-child(3) {
+  background-image: url(/Participation.f1092f84.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:nth-child(3):hover {
+  width: 20%;
+}
+div.cd-primary-nav div:nth-child(4) {
+  background-image: url(/Benefits.d7a2fc91.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:nth-child(4):hover {
+  width: 20%;
+}
+div.cd-primary-nav div:last-child {
+  background-image: url(/Requirements.889a8724.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:last-child:hover {
+  width: 20%;
+}
+
 /* -------------------------------- 
 
 xBackground 
@@ -212,12 +261,22 @@ xPatterns
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
+.cd-box img {
+  width: 50%;
+}
 
 /* -------------------------------- 
 
 xPage title 
 
 -------------------------------- */
+header > div {
+  background-color: #8C7158;
+}
+header > div > img {
+  height: 90%;
+}
+
 main > h1 {
   color: #66858C;
 }

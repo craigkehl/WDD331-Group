@@ -10,7 +10,7 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: $color-3;
+  background-color: $color-4;
   width: 120px;
 
   @include MQ(M) {
@@ -29,7 +29,7 @@ header {
 
   @include MQ(M) {
     li a {
-      color: lighten($color-2, 40%);
+      color: $color-2;
 
       &.selected {
         color: $color-1;
@@ -81,6 +81,56 @@ header {
     &::before {
       /* right arrow color */
       border-color: $color-1;
+    }
+  }
+}
+
+div.cd-primary-nav {
+  display: block;
+  div {
+    display: inline-block;
+    width: 20%;
+    height: 100px;
+    &:first-child {
+      background-color: red;
+      // background-image: url(../assets/Enlightenment.svg) ;
+      width: 15%;
+      height: auto;
+      &:hover {
+        width: 20%;
+      }
+    }      
+    &:nth-child(2){
+      background-image: url(../assets/Whats_it_about.svg);
+      width: 15%;
+      height: auto;
+      &:hover {
+        width: 20%;
+      }
+    }
+    &:nth-child(3) {
+      background-image: url(../assets/Participation.svg);
+      width: 15%;
+      height: auto;
+      &:hover {
+        width: 20%;
+      }
+    }
+    &:nth-child(4) {
+      background-image: url(../assets/Benefits.svg) ;
+      width: 15%;
+      height: auto;
+      &:hover {
+        width: 20%;
+      }
+    }  
+    &:last-child {
+      background-image: url(../assets/Requirements.svg);
+      width: 15%;
+      height: auto;
+      &:hover {
+        width: 20%;
+      }
     }
   }
 }
