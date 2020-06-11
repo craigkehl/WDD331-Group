@@ -1,0 +1,56 @@
+
+footer {
+	position: absolute;
+	display: block;
+	width: 50px;
+	margin: 0;
+  top: 25%;
+  left: 20%;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: .5em
+  margin: 10px;
+}
+
+footer:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 160%;
+	height: 160%;
+	top: -30%;
+	left: -30%;
+	background-color: #d3bb9f;
+	z-index: -1;
+	box-shadow:
+		inset 0px 10px .5em rgba(0,0,0,.25),
+		inset .1em 0px .1em rgba(0,0,0,.1),
+		inset -0.1em 0px .1em rgba(0,0,0,.05),
+		0 .3em .2em #fff;
+}
+
+footer:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 145%;
+	height: 145%;
+	top: -22.5%;
+	left: -22.5%;
+	background: #d3bb9f;
+	z-index: -2;
+	box-shadow:
+		0px 1em 2em -1em rgba(0,0,0,.4),
+		0px 2em 2em -1em rgba(0,0,0,.3),
+		0px 3em 2em -1em rgba(0,0,0,.2),
+		0px 4em 1.5em -1em rgba(0,0,0,.15),
+		0px 2em 4em .5em rgba(0,0,0,.1),
+		inset 0 .2em .1em #fff;
+}
+
+
