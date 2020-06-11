@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56.1 229.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-width: 0.72px;
+      }
+
+      .cls-4 {
+        fill: #bc3f3f;
+        stroke-width: 1.3px;
+      }
+
+      .cls-5 {
+        fill: #b94242;
+        stroke-width: 2.42px;
+      }
+
+      .cls-6 {
+        font-size: 18px;
+        fill: #fcfafc;
+        font-family: BookAntiqua-Bold, Book Antiqua;
+        font-weight: 700;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.41" y1="175.15" x2="56.8" y2="175.15" gradientTransform="matrix(1, 0, 0, -1, -0.19, 289.7)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#233367"/>
+      <stop offset="0.25" stop-color="#3a54ab"/>
+      <stop offset="0.5" stop-color="#3a54ab"/>
+      <stop offset="1" stop-color="#233367"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg2">
+      <g id="Top_lft_blue">
+        <path id="path2993" class="cls-1" d="M5.3,0,56.1.4,52.7,229.1,0,228.7Z"/>
+        <path id="path3155" class="cls-2" d="M36.7,209c0,4.9-3.6,8.9-8.1,8.9s-8.1-4-8.1-8.9,3.6-8.9,8.1-8.9S36.7,204.1,36.7,209Z"/>
+        <path id="path3157" class="cls-3" d="M23,204c2.3,1.1,4.5,2.9,5.2,5.4a11.86,11.86,0,0,1,.1,6.2l-.3.6"/>
+        <path id="path3159" class="cls-3" d="M32.6,202.1a8.15,8.15,0,0,0-1.6,6.2c0,1.8-.2,3.7.9,5.3a2,2,0,0,0,1.1,1.3"/>
+        <path id="path3161" class="cls-3" d="M21.3,208.2c2.2.5,4.4,1.5,6.8,1.2a4.1,4.1,0,0,0,3.4-.8c.9-.6,2.2-.8,2.7-1.9.3-.4.5-.7.8-1.1"/>
+        <rect id="rect3163" class="cls-4" x="8.9" y="188.8" width="37.8" height="5.7"/>
+        <rect id="rect5496" class="cls-5" x="11.6" y="18.4" width="37.8" height="19.9"/>
+        <text class="cls-6" transform="translate(28.61 53.75) rotate(90.77)">Requirements</text>
+      </g>
+    </g>
+  </g>
+</svg>

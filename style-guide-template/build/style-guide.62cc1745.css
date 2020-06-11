@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,121 +55,6 @@ table {
 
 /* -------------------------------- 
 
-xBackground 
-
--------------------------------- */
-body {
-  /* this is the page background */
-  background-color: #EDFCFF;
-}
-
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #D9C5B4;
-  border-radius: 3px;
-  background: #EDFCFF;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-}
-
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
-header {
-  background-color: #66858C;
-}
-
-.cd-logo {
-  /* logo box style */
-  background-color: #B4D2D9;
-  width: 120px;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    width: 180px;
-  }
-}
-
-.cd-main-nav {
-  /* main navigation background color - full screen on small devices */
-  background: #66858C;
-}
-.cd-main-nav li a {
-  color: #EDFCFF;
-  border-color: #739299;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-main-nav li a {
-    color: #dae2e4;
-  }
-  .cd-main-nav li a.selected {
-    color: #EDFCFF;
-    box-shadow: 0 2px 0 #B4D2D9;
-  }
-  .cd-main-nav li a:hover {
-    color: #EDFCFF;
-  }
-}
-
-.cd-nav-trigger span {
-  /* hamburger menu */
-  background-color: #EDFCFF;
-}
-.cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  /* upper and lower lines */
-  background-color: #EDFCFF;
-}
-
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(237, 252, 255, 0);
-}
-.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-  /* preserve visibility of upper and lower lines - close icon */
-  background-color: #edfcff;
-}
-
-.cd-download {
-  /* download button top-right visible on big devices */
-  background-color: #819da4;
-}
-.no-touch .cd-download:hover {
-  background-color: #90a9ae;
-}
-.cd-download span {
-  /* tooltip */
-  background: #B4D2D9;
-  color: #EDFCFF;
-}
-.cd-download span::before {
-  /* right arrow color */
-  border-color: #B4D2D9;
-}
-
-/* -------------------------------- 
-
-xPage title 
-
--------------------------------- */
-main > h1 {
-  color: #66858C;
-}
-@media only screen and (min-width: 1600px) {
-  main > h1 {
-    /* title goes into the header on big devices */
-    color: #EDFCFF;
-  }
-}
-
-/* -------------------------------- 
-
 xTypography 
 
 -------------------------------- */
@@ -208,7 +94,7 @@ h2 {
 
 section > h2::before {
   /* number before each section title */
-  color: #bf9e81;
+  color: #5d4b3a;
 }
 
 p {
@@ -229,56 +115,176 @@ p a {
 
 /* -------------------------------- 
 
-xButtons 
+xNavigation 
 
 -------------------------------- */
-.btn {
-  border: none;
-  box-shadow: none;
-  border-radius: 0.25em;
-  font-size: 1.4rem;
-  font-family: "Lobster", serif;
-  color: #EDFCFF;
-  padding: 0.6em 2.2em;
-  cursor: pointer;
-  background: #B4D2D9;
+header {
+  background-color: #B4D2D9;
 }
-.btn:focus {
-  outline: none;
+
+.cd-logo {
+  /* logo box style */
+  background-color: #8C7158;
+  width: 120px;
 }
-.no-touch .btn:hover {
-  background: #c5dce2;
-}
-.btn.btn-success {
-  background: #6fce72;
-}
-.no-touch .btn.btn-success:hover {
-  background: #82d485;
-}
-.btn.btn-alert {
-  background: red;
-}
-.no-touch .btn.btn-alert:hover {
-  background: #ff1a1a;
-}
-.btn.btn-outline {
-  color: #B4D2D9;
-  background: transparent;
-  box-shadow: inset 0 0 0 1px #B4D2D9;
-}
-.no-touch .btn.btn-outline:hover {
-  color: #EDFCFF;
-  background: #B4D2D9;
-}
-@media only screen and (min-width: 768px) {
-  .btn {
-    font-size: 1.6rem;
+@media only screen and (min-width: 1024px) {
+  .cd-logo {
+    width: 180px;
   }
 }
 
-.cd-buttons .cd-box:nth-of-type(2) span {
-  /* CSS class name color */
-  color: #B4D2D9;
+.cd-main-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #EDFCFF;
+}
+.cd-main-nav li a {
+  color: #8C7158;
+  border-color: #739299;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-main-nav li a {
+    color: #66858C;
+  }
+  .cd-main-nav li a.selected {
+    color: #B4D2D9;
+    box-shadow: 0 2px 0 #66858C;
+  }
+  .cd-main-nav li a:hover {
+    color: #D9C5B4;
+  }
+}
+
+.cd-nav-trigger span {
+  /* hamburger menu */
+  background-color: #EDFCFF;
+}
+.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  /* upper and lower lines */
+  background-color: #EDFCFF;
+}
+
+.nav-is-visible .cd-nav-trigger span {
+  /* hide line in the center on mobile when nav is visible */
+  background-color: rgba(217, 197, 180, 0);
+}
+.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
+  /* preserve visibility of upper and lower lines - close icon */
+  background-color: #d9c5b4;
+}
+
+.cd-download {
+  /* download button top-right visible on big devices */
+  background-color: #819da4;
+}
+.no-touch .cd-download:hover {
+  background-color: #90a9ae;
+}
+.cd-download span {
+  /* tooltip */
+  background: #B4D2D9;
+  color: #D9C5B4;
+}
+.cd-download span::before {
+  /* right arrow color */
+  border-color: #B4D2D9;
+}
+
+div.cd-primary-nav {
+  display: block;
+}
+div.cd-primary-nav div {
+  display: inline-block;
+  width: 20%;
+  height: 100px;
+}
+div.cd-primary-nav div:first-child {
+  background-color: red;
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:first-child:hover {
+  width: 20%;
+}
+div.cd-primary-nav div:nth-child(2) {
+  background-image: url(/Whats_it_about.56a80a4c.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:nth-child(2):hover {
+  width: 20%;
+}
+div.cd-primary-nav div:nth-child(3) {
+  background-image: url(/Participation.f1092f84.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:nth-child(3):hover {
+  width: 20%;
+}
+div.cd-primary-nav div:nth-child(4) {
+  background-image: url(/Benefits.d7a2fc91.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:nth-child(4):hover {
+  width: 20%;
+}
+div.cd-primary-nav div:last-child {
+  background-image: url(/Requirements.889a8724.svg);
+  width: 15%;
+  height: auto;
+}
+div.cd-primary-nav div:last-child:hover {
+  width: 20%;
+}
+
+/* -------------------------------- 
+
+xBackground 
+
+-------------------------------- */
+body {
+  /* this is the page background */
+  background-color: #EDFCFF;
+}
+
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #8C7158;
+  border-radius: 3px;
+  background: #EDFCFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+}
+.cd-box img {
+  width: 50%;
+}
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+header > div {
+  background-color: #8C7158;
+}
+header > div > img {
+  height: 90%;
+}
+
+main > h1 {
+  color: #66858C;
+}
+@media only screen and (min-width: 1600px) {
+  main > h1 {
+    /* title goes into the header on big devices */
+    color: #D9C5B4;
+  }
 }
 
 /* -------------------------------- 
@@ -290,136 +296,6 @@ xIcons
   /* icons size */
   width: 32px;
   height: 32px;
-}
-
-/* -------------------------------- 
-
-xForm 
-
--------------------------------- */
-input[type=text],
-select {
-  border: 1px solid #D9C5B4;
-  border-radius: 0.25em;
-  background: #EDFCFF;
-}
-input[type=text]:focus,
-select:focus {
-  outline: none;
-}
-
-input[type=text] {
-  padding: 0.6em 1em;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-input[type=text].success {
-  border-color: #6fce72;
-  box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
-}
-input[type=text].alert {
-  border-color: red;
-  box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
-}
-input[type=text]:focus {
-  border-color: #B4D2D9;
-  box-shadow: 0 0 6px rgba(180, 210, 217, 0.2);
-}
-
-input[type=radio],
-input[type=checkbox] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-}
-
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.radio-label::before, .radio-label::after,
-.checkbox-label::before,
-.checkbox-label::after {
-  /* custom radio and check boxes */
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.radio-label::before,
-.checkbox-label::before {
-  left: 0;
-  border: 1px solid #D9C5B4;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-.radio-label::after,
-.checkbox-label::after {
-  left: 3px;
-  background: url("/icon-check.b3fa7148.svg") no-repeat center center;
-  display: none;
-}
-
-.radio-label::before {
-  border-radius: 50%;
-}
-
-.checkbox-label::before {
-  border-radius: 3px;
-}
-
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #66858C;
-  border: none;
-  box-shadow: none;
-}
-
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block;
-}
-
-.cd-select::after {
-  /* switcher arrow for select element */
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 14px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("/icon-select.65729cd7.svg") no-repeat center center;
-  pointer-events: none;
-}
-
-select {
-  position: relative;
-  padding: 0.6em 2em 0.6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
 }
 
 /* -------------------------------- 
@@ -911,31 +787,31 @@ section:nth-of-type(10) h2::before {
   background: #5b777d;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #8C7158;
-}
-.cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #9c7e62;
-}
-.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #7c644e;
-}
-.cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #D9C5B4;
-}
-.cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #e2d2c5;
-}
-.cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #d0b8a3;
-}
-.cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #EDFCFF;
 }
-.cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+.cd-colors li:nth-of-type(3) .cd-color-swatch::before {
   background: white;
 }
-.cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
   background: #d4f8ff;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
+  background: #8C7158;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+  background: #9c7e62;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+  background: #7c644e;
+}
+.cd-colors li:nth-of-type(5) .cd-color-swatch {
+  background: #D9C5B4;
+}
+.cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+  background: #e2d2c5;
+}
+.cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+  background: #d0b8a3;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47.7 247.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #6dcbca;
+        stroke: #000;
+        stroke-width: 1.3px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: green;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: teal;
+        stroke-width: 5.6px;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        font-size: 15px;
+        fill: #fff;
+        font-family: LobsterTwo, Lobster Two;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.67" y1="203.7" x2="48.07" y2="203.7" gradientTransform="matrix(1, 0, 0, -1, 0.2, 327.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#205d5e"/>
+      <stop offset="0.25" stop-color="#3aa9ab"/>
+      <stop offset="0.5" stop-color="#3aa9ab"/>
+      <stop offset="1" stop-color="#256c6d"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg2">
+      <g id="Top_mid_aqua">
+        <path id="path2999" class="cls-1" d="M2.7,0h45V247.6H0Z"/>
+        <rect id="rect3188" class="cls-2" x="3.5" y="18.5" width="43.5" height="7.7"/>
+        <path id="path5410" class="cls-3" d="M4.7,220.6c8.5,3.9,17.8-5.7,25.8.3,3.6,1.9,8.8,4.4,12.3.8"/>
+        <path id="path5422" class="cls-4" d="M4.7,229.1c8.5,3.9,17.8-5.7,25.8.3,3.6,1.9,8.8,4.4,12.3.8"/>
+        <text class="cls-5" transform="translate(17.94 70.03) rotate(0.57)">So<tspan x="-9.21" y="20">What</tspan><tspan x="2.9" y="40">is</tspan><tspan x="-4.47" y="60">This</tspan><tspan x="-8.8" y="80">About</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
