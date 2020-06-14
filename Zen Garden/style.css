@@ -101,7 +101,8 @@ header {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
-	float: left;
+	/*float: left;*/
+	grid-area: summary;
 	}
 .summary p {
 	font: italic 1.1em/2.2 georgia; 
@@ -141,7 +142,8 @@ footer a:link, footer a:visited {
 
 	grid: 	'resources archives select' 
 			'resources archives select'
-			'resources archives select';
+			'resources archives select'
+			'resources archives summary';
 	
 	/*
 	grid: 	'shelf1 resources resources shelf2 archives archives shelf3 select select'
@@ -218,3 +220,34 @@ footer a:link, footer a:visited {
 .zen-resources { grid-area: resources; }
 .design-name { font-size: medium; }
 .design-selection { font-size: xx-small; }
+
+.main h3 {
+	width: 50%; width: 16em;
+}
+.main p {
+	width: 50%; padding: 2em; width: 16em;
+}
+
+
+.main div {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro h3 {
+	width: 50%; width: 16em;
+}
+
+.intro p {
+	width: 50%; padding: 2em; width: 16em;
+}
+
+
+.intro div {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
