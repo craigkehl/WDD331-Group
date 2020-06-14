@@ -56,8 +56,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
+	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;  
 	margin: 0; 
 	position: relative;
 	}
@@ -221,33 +220,32 @@ footer a:link, footer a:visited {
 .design-name { font-size: medium; }
 .design-selection { font-size: xx-small; }
 
-.main h3 {
-	width: 50%; width: 16em;
+.intro div {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-items: center;
 }
-.main p {
-	width: 50%; padding: 2em; width: 16em;
-}
-
 
 .main div {
 	display: flex;
-	flex-flow: row wrap;
 	justify-content: center;
+	flex-flow: row wrap;
 	align-items: center;
 }
 
-.intro h3 {
-	width: 50%; width: 16em;
-}
+.main h3 { width: 70%; }
+.main p { padding: 2em; width: 70%; }
+.intro h3 { width: 70%;}
+.intro p { padding: 2em; width: 70%; }
 
-.intro p {
-	width: 50%; padding: 2em; width: 16em;
-}
-
-
-.intro div {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+@media only screen and (min-width: 700px)
+{
+	.main div {justify-content: center;}
+	intro div {justify-content: center;}
+	.page-wrapper{	padding: 0 175px 0 110px; }
+	.main h3 { width: 16em; }
+	.main p { padding: 2em; width: 16em; }
+	.intro h3 { width: 16em;}
+	.intro p { padding: 2em; width: 16em; }
 }
