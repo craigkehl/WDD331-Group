@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .preamble p {
+      color: white;
+    }
+    .preamble h3::selection{
+      background: green;
+    } 
+    
+    h3::selection p { 
+      background: transparent;
+      color: black;
+    }
+    
+    .preamble h3::-moz-selection{
+      background: green;
+      content: "context test";
+    }
+    
+    .preamble {
+        user-select: all;
+    }
+
+    .preamble h3::-moz-selection + p{
+      display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="preamble">
+    <h3> Test text</h3>
+    <p> This is what we want to show</p>
+  </div>
+
+</body>
+</html>

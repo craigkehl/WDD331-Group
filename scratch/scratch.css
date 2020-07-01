@@ -1,0 +1,23 @@
+h3::selection + p {
+
+}
+
+p::selection {
+  display: visible;
+}
+
+.preamble h3::selection{
+	background: green;
+}
+
+.preamble h3::-moz-selection{
+	background: green;
+	content: "context test";
+}
+
+.preamble h3 {
+    user-select:all;
+}
+.preamble h3::-moz-selection + p{
+	display: block;
+}
