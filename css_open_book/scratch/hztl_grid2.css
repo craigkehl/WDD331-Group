@@ -1,0 +1,77 @@
+:root {
+  --gutter: 10px;
+}
+
+.page-wrapper {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.page-wrapper > * {
+  grid-column: 2 / -2;
+}
+
+.page-wrapper > .full {
+  grid-column: 1 / -1;
+}
+
+.main {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: repeat(5, calc(90% - var(--gutter) * 2));
+  grid-template-rows: minmax(300px, 1fr);
+  
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+
+/* Demo styles */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #456173;
+}
+
+div.main {
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.page-wrapper {
+  width: 375px;
+  height: 667px;
+  background: #DBD0BC;
+  overflow-y: scroll;
+}
+
+div.main > div,
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
