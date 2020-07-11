@@ -72,11 +72,11 @@ header {
 	padding-top: 20px;
 	height: 87px;
 	h1 { 
-		background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+		background: transparent url(Logo.png) no-repeat top left;
 		margin-top: 10px;
 		display: block;
-		width: 219px;
-		height: 87px;
+		width: 200px;
+		height: 200px;
 		float: left;
 		text-indent: 100%;
 		white-space: nowrap;
@@ -147,7 +147,6 @@ footer {
 	}
 	h3 {width: 70%;}
 	p { padding: 2em; width: 70%; }
-	header {background-image: url("Logo.png");}
 }
 
 .main{
