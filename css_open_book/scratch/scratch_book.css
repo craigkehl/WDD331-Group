@@ -10,6 +10,8 @@ body {
   margin-bottom: 10%;
   backface-visibility: none;
   width: 80vmin;
+  background-image: url(./assets/BkBgnd.png);
+  background-size: cover;
 }
 
 .front, .back, .page1, .page2, .page3, .page4, .page5, .page6, .front::after {

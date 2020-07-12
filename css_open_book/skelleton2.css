@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+div#zen-supporting div#zen-explanation {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0);
+	transform-origin: left center;
+	/* box-shadow: 5px 5px 10px rgb(101, 101, 101);	 */
+	transition: all 1s ease-in-out;
+}
+div#zen-supporting:hover div#zen-explanation {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateX(1%);
+	box-shadow: -5px 5px 10px rgb(101, 101, 101);	
+	transition: all 750ms 1500ms ease-in-out;
+
+}
+
+div#zen-participation {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0);
+	transform-origin: left center;
+	/* box-shadow: 5px 5px 10px rgb(101, 101, 101);	 */
+  transition: all 1s 1.5s ease-in-out;
+  color: antiquewhite;
+}
+
+div#zen-participation:hover {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateX(1%);
+  z-index: 11;
+    box-shadow: -5px 5px 10px rgb(101, 101, 101);
+    transition: all 750ms 750ms ease-in-out;
+}
+
+
+div#zen-benefits {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0);
+	transform-origin: left center;
+	/* box-shadow: 5px 5px 10px rgb(101, 101, 101);	 */
+	transition: all 1s 1.5s ease-in-out;
+}
+
+div#zen-benefits:hover  {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateX(1%);
+  z-index: 12;
+    box-shadow: -5px 5px 10px rgb(101, 101, 101);
+}
+
+div#zen-benefits:hover ~ div#zen-participation {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateX(1%);
+  z-index: 11;
+    box-shadow: -5px 5px 10px rgb(101, 101, 101);
+}

@@ -10,6 +10,7 @@ body {
   margin-bottom: 10%;
   backface-visibility: none;
   width: 80vmin;
+  background-image: url(./scratch/assets/BkBgnd.png);
 }
 
 .front, .back, .page1, .page2, .page3, .page4, .page5, .page6, .front::after {
@@ -108,7 +109,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   perspective: 1200px;
-  background-image: url(./scratch/assetts/Mesa3.png);
+  background-image: url(./scratch/assets/Mesa3.png);
   background-size: cover;
 }
 
