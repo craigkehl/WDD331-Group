@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo</title>
+  <style>
+    :root {
+      --container-width: 78vw;
+      --container-height: 50vw;
+      --container-min-width: 500px;
+      --container-min-height: 350px;
+      --page-width: 52%;
+      --page-height: 100%;
+      --page-tab-width: 9%;
+      --page-tab-height: 16%;
+      --page-center: 50%;
+      --main-padding: 1rem;
+      --book-page-color: #faebd7;
+    }
+
+    body {
+      box-sizing: border-box;
+      color: black;
+    }
+
+    h1, h2, 
+    h3, h4, 
+    h5, p {
+      margin: 1rem;
+    }
+
+    #container {
+      width: var(--container-width);
+      height: var(--container-height);
+      min-width: var(--container-min-width);
+      min-height: var(--container-min-height);
+      background-color: var(--book-page-color);
+      border: 4vw solid #4c57f8;
+      display: grid;
+      grid-template-columns: 2% 96% 2%;
+      grid-template-rows: 100%;
+      border-radius: 15px;
+    }
+
+    #container:after {     
+      background-color: var(--book-page-color);
+      border: 1px solid black;
+      border-top: none;
+      border-bottom: none;
+      width: var(--page-width);
+      height: var(--page-height);
+
+    }
+    
+    [role="article"] {
+      width: var(--page-width);
+      height: var(--page-height);
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      margin: auto;
+      margin-left: var(--page-center);
+      position: relative;
+      transform-style: preserve-3d;
+    }
+    
+    [role="article"]::before,
+    [role="article"]::after,
+    [role="article"] {      
+      background-color: var(--book-page-color);
+      border: 1px solid black;
+      color: black;
+    }
+    
+    .page1 {
+      z-index: 10;
+    } 
+
+    .page2 {
+      z-index: 9;
+    } 
+    
+    .page3 {
+      z-index: 8;
+    } 
+    
+    .page4 {
+      z-index: 7;
+    } 
+    
+    .page5 {
+      z-index: 6;
+    } 
+    
+    .page6 {
+      z-index: 5;
+    }
+
+    [role="article"]::before,
+    [role="article"]::after {
+      opacity: 1;
+    }
+
+    [role="article"]::before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+    }
+    
+    .page1::before {
+      content: "";      
+    }
+
+    .page2::before {
+      content: "";
+    }
+
+    .page3::before {
+      content: "";
+    }
+
+    .page4::before {
+      content: "";
+    }
+
+    [role="article"]::after {
+      position: absolute;
+      right: 0%;
+      transform-origin: bottom right;
+      transform: rotate(90deg);
+      border-bottom: none;
+      padding-left: .5rem;
+      height: 5%;
+    }
+
+    .page1::after {
+      content: "Participation";
+      top: 37%;
+      width: 34.5%;
+    }
+    
+    .page2::after {
+      content: "Benefits";
+      top: 59%;
+      width: 25%;
+    }
+
+    .page3::after {
+      content: "Requirements";
+      top: 89%;
+      width: 34.5%;
+    }
+
+
+    /***** Animation *****/
+    div#container div#zen-explanation {
+      transform: 
+        perspective(1000px) 
+        rotateY(0deg)
+        translateX(0);
+      transform-origin: left center;
+      transition: all 1s ease-in-out;
+    }
+
+    div#container:hover div#zen-explanation {
+      transform: 
+        perspective(1000px) 
+        rotateY(-180deg)
+        translateX(1%);
+      box-shadow: -5px 5px 10px rgb(101, 101, 101);	
+      transition: all 750ms 1500ms ease-in-out;
+    }
+
+    div#zen-participation {
+      transform: 
+        perspective(1000px) 
+        rotateY(0deg)
+        translateX(0);
+      transform-origin: left center;
+      transition: all 1s 1.5s ease-in-out;
+    }
+
+    div#zen-participation:hover {
+      transform: 
+        perspective(1000px) 
+        rotateY(-180deg)
+        translateX(1%);
+        box-shadow: -5px 5px 10px rgb(101, 101, 101);
+        transition: all 750ms 750ms ease-in-out;
+    }
+    
+
+    div#zen-benefits {
+      transform: 
+        perspective(1000px) 
+        rotateY(0deg)
+        translateX(0);
+      transform-origin: left center;
+      transition: all 1s 1.5s ease-in-out;
+    }
+
+    div#zen-benefits:hover {
+      transform: 
+        perspective(1000px) 
+        rotateY(-180deg)
+        translateX(1%);
+        box-shadow: -5px 5px 10px rgb(101, 101, 101);
+        transition: all 750ms 750ms ease-in-out;
+    }
+/*
+    animation-name: pageTurn;
+      animation-duration: 1s;
+      animation-fill-mode: forward;
+    
+ 
+    @keyframes pageTurn {
+      from {
+        transform: 
+          perspective(1000px) 
+          rotateY(0deg)
+          translateX(0);
+          box-shadow: none;
+      }
+      to {
+        transform: 
+          perspective(1000px) 
+          rotateY(-180deg)
+          translateX(1%);
+          box-shadow: -5px 5px 10px rgb(101, 101, 101);
+      }
+    }*/
+  </style>
+</head>
+<body>
+  <div id="page-wrapper">
+    <section></section>
+    <div id="container">
+      <div id="zen-explanation" class="page1" role="article">
+        <h3>So What is This About?</h3>
+				<p>
+					There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.
+				</p>
+				<p>
+					<abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can always push it further.
+				</p>
+      </div>
+      <div id="zen-participation" class="page2" role="article">      
+          <h3>Participation</h3>
+          <p>
+            Strong visual design has always been our focus. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the 
+            <a href="http://www.mezzoblue.com/zengarden/resources/" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.
+          </p>
+          <p>
+            You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.
+          </p>
+          <p>
+            Download the sample 
+            <a href="/examples/index" title="This page's source HTML code, not to be modified.">HTML</a>and<a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">CSS</a> to work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server under your control. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that file and all associated assets, and if we choose to use it we will download it and place it on our server.
+          </p>       
+      </div>
+      <div id="zen-benefits" class="page3" role="article">      
+          <h3>Benefits</h3>
+          <p>
+            Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing<abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.
+          </p>     
+      </div>
+      <div id="zen-requirements" class="page4" role="article">      
+          <h3>Requirements</h3>
+          <p>
+              Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.
+          </p>
+          <p>
+              Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).
+          </p>       
+      </div>
+      <footer></footer>
+    </div>
+    <aside></aside>
+  </div>
+  <div class="extra1" role="presentation">1</div>
+  <div class="extra2" role="presentation">2</div>
+  <div class="extra3" role="presentation">3</div>
+  <div class="extra4" role="presentation">4</div>
+  <div class="extra5" role="presentation">5</div>
+  <div class="extra6" role="presentation">6</div>
+</body>
+</html>
