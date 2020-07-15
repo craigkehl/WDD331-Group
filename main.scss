@@ -1,0 +1,506 @@
+
+@import 'colors';
+// temporarily taking out till I fix the bookshelf @import 'zenresources';
+@import 'footer';
+@import 'summary';
+@import 'typography';
+@import 'bookshelf';
+
+/* horizontal slider */
+:root {
+  --gutter: 2vw;
+  --page-tab-width: 9%;
+  --page-tab-height: 16%;
+  --page-center: 50%;
+  --book-page-color: #fff;
+}
+
+.page-wrapper {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  grid-template-rows: auto auto auto;
+  align-content: start;
+}
+
+aside {
+  grid-column: 2 / -2;
+  grid-row: 1 / 2;
+}
+
+.intro {
+  grid-column: 2 / -2;
+  grid-row: 2 / 3;
+}
+
+.main {
+  grid-column: 2 / -2;
+  grid-row: 3 / 4;
+}
+
+
+/**** less than 500 px ***/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: $_background;
+  font-size: 13px;
+  min-width: 310px;
+}
+
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+div.main > div {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 80%;
+  height: calc(90vw*1.35);
+  min-height: 410px;
+  background-color: $_white; 
+  border-left: 6px solid $_temp_dark_grey;
+  box-shadow: 2 2 2 rgb(0, 0, 0);
+  padding: 1rem .8rem 1rem 1rem;
+  margin: 6rem auto; 
+  position: relative;
+}
+
+.main a,
+.main p {
+  font-size: 13px; // Needs resolution
+  line-height: 1.1; // Needs resolution
+}
+
+.main div p {
+  margin-right: 1rem;
+  color: $_black;
+}
+
+.main a {
+  padding: 0; // Needs resolution
+  margin: 0; // Needs resolution
+}
+
+#zen-explanation  {
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+}
+
+#zen-participation  {
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+}
+
+#zen-benefits  {
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+}
+
+#zen-requirements  {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  align-items: flex-start;
+  justify-items: center;
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+}
+
+#zen-requirements h3 {
+  grid-row: 1 / 2;
+}
+
+#zen-requirements p:first-of-type {
+  grid-row: 2 / 3;
+}
+
+#zen-requirements p:nth-of-type(2) {
+  grid-row: 3 / 4;
+}
+
+#zen-requirements p:nth-of-type(3) {
+  grid-row: 1 / 2;
+  display: none;
+}
+
+#zen-requirements p:nth-of-type(4) {
+  grid-row: 2 / 3;
+  display: none;
+}
+
+#zen-requirements p:nth-of-type(5) {
+  grid-row: 3 / 4;
+  display: none;
+}
+
+
+footer {  
+  font-size: .25rem;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  top: 92%; //counteract _footer particial
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  }
+
+  /******* animation ********/
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements {
+  transform-style: preserve-3d;
+}
+
+#zen-explanation::before {
+  content: "So What is This About?";
+  font-size: 2rem;
+  color: $_white;
+  border: 3px ridge $_white;
+  width: 60%;
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 9%;
+  transform-origin:-16% 0%;
+  z-index: 21;
+}
+
+#zen-participation::before {
+  content: "Participation";
+  font-size: 2rem;
+  color: $_white;
+  // border: 3px 0 3px 0 double $_white;
+  width: 60%;
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 9%;
+  transform-origin:-16% 0%;
+  z-index: 21;
+}
+
+#zen-benefits::before {
+  content: "Benefits";
+  font-size: 2rem;
+  color: $_white;
+  border: 3px double $_white;
+  width: 60%;
+  text-align: center;
+  padding: .75rem;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform-origin:-16% 0%;
+  z-index: 21;
+}
+
+#zen-requirements::before {
+  content: "";
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 98%;
+  height: 100%;
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  background-color: $_white;
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+  border-left: 6px solid $_temp_book_Accent;
+  box-shadow: -5px 0px 28px $_temp_dark_grey;
+  transform: perspective(1000px) rotateY(-180deg);
+  transform-origin: left center;
+  z-index: 20;
+}
+
+#zen-explanation::after {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  background-color: $_temp_book_covers;
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+  border-left: 6px solid $_temp_book_Accent;
+  box-shadow: 2 2 2 $_black;
+  z-index: 20;
+}
+
+#zen-participation::after  {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  background-color: $_temp_book_covers;
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+  border-left: 6px solid $_temp_book_Accent;
+  box-shadow: 2 2 2 $_black;
+  z-index: 20;
+}
+
+#zen-benefits::after  {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  background-color: $_temp_book_covers;
+  border-top: 4px solid $_temp_book_covers;
+  border-right: 10px solid $_temp_book_covers;
+  border-bottom: 6px solid $_temp_book_covers;
+  border-left: 6px solid $_temp_book_Accent;
+  box-shadow: 2 2 2 $_black;
+  z-index: 20;
+}
+
+#zen-requirements::after  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(255, 255, 255, .8);
+  z-index: -1;
+}
+
+#zen-explanation::after {
+  content: "";
+}
+
+#zen-participation::after {
+  content: "";
+}
+
+#zen-benefits::after {
+  content: "";
+}
+
+#zen-requirements::after {
+  content: "";
+}
+
+
+/***** Animation *****/
+#zen-explanation::before  {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg); 
+  transition: transform 1s ease-in-out;
+}
+
+#zen-explanation:hover::before {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg);
+  transition: transform 750ms ease-in-out 250ms;
+}
+
+#zen-explanation::after {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0)
+    scaleY(100%);
+  transform-origin: left center;
+  box-shadow: 2 2 2 $_black;
+  background-color: $_temp_book_covers; // make solid book cover
+  border-left: 6px solid $_temp_book_Accent;
+  transition: transform 1s ease-in-out,
+    box-shadow 1s ease-in-out, 
+    background-color 750ms steps(1, start) 250ms;
+}
+
+#zen-explanation:hover::after {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateY(1%)
+    scaleY(102%);
+  box-shadow: -5px 5px 15px $_temp_dark_grey;
+  background-color: $-white;
+  border-left: 0px solid $_temp_book_Accent;
+  transition: transform 750ms ease-in-out 250ms,
+    box-shadow 750ms ease-in-out 250ms,
+    scale 750ms ease-in-out 250ms,
+    background-color 250ms steps(1, end) 300ms;
+}
+
+#zen-participation::before  {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg); 
+  transition: transform 1s ease-in-out;
+}
+
+#zen-participation:hover::before {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg);
+  transition: transform 750ms ease-in-out 250ms;
+}
+
+#zen-participation::after  {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0)
+    scaleY(100%);
+  transform-origin: left center;
+  box-shadow: 2 2 2 $_black;
+  background-color: $_temp_book_covers; // make solid book cover
+  border-left: 6px solid $_temp_book_Accent;
+  transition: transform 1s ease-in-out,
+    box-shadow 1s ease-in-out, 
+    background-color 750ms steps(1, start) 250ms;
+}
+
+#zen-participation:hover::after {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateY(1%)
+    scaleY(102%);
+  box-shadow: -5px 5px 15px $_temp_dark_grey;
+  background-color: $-white;
+  border-left: 0px solid $_temp_book_Accent;
+  transition: transform 750ms ease-in-out 250ms,
+    box-shadow 750ms ease-in-out 250ms,
+    scale 750ms ease-in-out 250ms,
+    background-color 250ms steps(1, end) 300ms;
+}
+
+#zen-benefits::before  {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg); 
+  transition: transform 1s ease-in-out;
+}
+
+#zen-benefits:hover::before {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg);
+  transition: transform 750ms ease-in-out 250ms;
+}
+
+#zen-benefits::after  {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0)
+    scaleY(100%);
+  transform-origin: left center;
+  box-shadow: 2 2 2 $_black;
+  background-color: $_temp_book_covers; // make solid book cover
+  border-left: 6px solid $_temp_book_Accent;
+  transition: transform 1s ease-in-out,
+    box-shadow 1s ease-in-out, 
+    background-color 750ms steps(1, start) 250ms;
+}
+
+#zen-benefits:hover::after {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateY(1%)
+    scaleY(102%);
+  box-shadow: -5px 5px 15px $_temp_dark_grey;
+  background-color: $-white;
+  border-left: 0px solid $_temp_book_Accent;
+  transition: transform 750ms ease-in-out 250ms,
+    box-shadow 750ms ease-in-out 250ms,
+    scale 750ms ease-in-out 250ms,
+    background-color 250ms steps(1, end) 300ms;
+}
+
+#zen-requirements::after  {
+  transform: 
+    perspective(1000px) 
+    rotateY(0deg)
+    translateX(0)
+    scaleY(100%);
+  transform-origin: left center;
+  transition: all 1s ease-in-out;
+}
+
+#zen-requirements:hover::after {
+  transform: 
+    perspective(1000px) 
+    rotateY(-180deg)
+    translateY(1%)
+    scaleY(102%);
+  border-left: 6px solid $_temp_book_Accent;
+  transition: all 750ms ease-in-out 250ms;
+}
+
+/*** Typography ***/
+
+@media only screen and (min-width: 600px) {  
+  
+  div.main > div,
+  #zen-explanation,
+  #zen-participation,
+  #zen-benefits,
+  #zen-requirements {
+    border-radius: 8px;
+    background-image: url(./images/open_book_v4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 380px;
+    column-count: 2;
+    column-gap: 8%;
+    column-fill: auto;
+    padding: 5% 9% 8% 10%;
+  }
+  
+  .main {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-columns: repeat(4, minmax(90vmin, 180vmin));
+    grid-template-rows: minmax(66vmin, 67vmin);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+  }
+}

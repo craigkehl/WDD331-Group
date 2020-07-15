@@ -6,8 +6,22 @@ $color-3: #EDFCFF; // Lightest Blue - background
 $color-4: #8C7158; // Brown
 $color-5: #D9C5B4; // Tan
 $color-6: #f00; // red
+$color-7: #6fce72; // green
 
-// additional colors
+//Temp colors - to stand out and be changed
+$_temp_book_covers: #a52a2a;
+$_temp_book_Accent: #701e1e;
+$_temp_dark_grey: #0f0f0f;
+// use names
+$_black: #000;
+$_white: #fff;
+$success: $color-7; 
+$alert: $color-6; 
+$_background: $color-3;
 
-$success: #6fce72; // green
-$alert: $color-6; // red
+$_main_blue: $color-1; 
+$_dark_blue: $color-2;
+$_lightest_blue: $color-3;
+$_brown: $color-4;
+$_tan: $color-5;
+$_red: $color-6;
