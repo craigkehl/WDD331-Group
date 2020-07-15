@@ -1,6 +1,6 @@
 .sidebar {
 	position: absolute;
-	top: -30em; 
+	top: -32em; 
 	left: 24vw;
 	transform: rotate(270deg);
 
@@ -14,7 +14,8 @@
 		grid-gap: 10px; 
 		margin-top: 150px; 
 		width: 130px; 
-		font-size: medium;
+		//font-size: medium;
+		font-size: 100%;
 		display: grid;
 	
 		grid: 	'resources archives select' 
@@ -82,8 +83,16 @@
 .design-selection { grid-area: select; }
 .design-archives { grid-area: archives; }
 .zen-resources { grid-area: resources; }
-.design-name { font-size: medium; }
-.design-selection { font-size: xx-small; }
+//.design-name { font-size: medium; }
+//.design-selection { font-size: xx-small; }
 
-@media only screen and (min-width: 700px)
-{}
+@media only screen and (max-width: 425px)
+{
+	.sidebar {
+		left: 18vw;
+		.wrapper {
+			font-size: 90%;
+		}
+	}
+	//.design-selection { font-size: 50%; }
+}
