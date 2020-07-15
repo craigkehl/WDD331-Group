@@ -1,11 +1,11 @@
 footer {
-	display: inline;
-	width: 100%;
-	margin: 0;
-  top: 25%;
-  left: 20%;
-  padding: 20px 15px 20px 15px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding:5px;
   background-color: $color-1;
+  font-family: $primary-font;
 }
 
 footer a {
