@@ -1,17 +1,21 @@
 
+
 .summary {
 	position: absolute;
 	display: block;
+	width: 10%;
+  height: 15%;
 	margin: 0;
   top: 25%;
   left: 20%;
   padding: 5px 10px 5px 10px;
   background-color: white;
-  text-align: center;
+  font-size: 6px;
 }
 
 .summary a {
   text-decoration: none;
+  font-size: 6px;
   color: black;
   padding: .5em;
   margin: 10px;
