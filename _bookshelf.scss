@@ -33,6 +33,10 @@
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
+
+				//background: url("book-3.svg") repeat-y center;
+				//background-size: 13em 400%;
+
 	}
 
 	h3.archives { 
@@ -64,11 +68,15 @@
 
 	li {
 		line-height: 1.3em; 
-		background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
 		display: block; 
+		padding-right: 15px;
+		padding-left: 15px;
 		padding-top: 5px; 
 		margin-bottom: 5px;
 		list-style-type: none;
+
+		
+		//border-radius: 200px / 20px;
 
 		a:link {
 			color: #988F5E;
@@ -78,13 +86,84 @@
 			color: #B3AE94;
 		}
 	}
+
 }
     
-.design-selection { grid-area: select; }
-.design-archives { grid-area: archives; }
-.zen-resources { grid-area: resources; }
+.design-selection { 
+	grid-area: select;
+
+	//book backgrounds
+	li:nth-child(1) {
+		background: url("book-3.svg") repeat-y center;
+				background-size: 13em 400%;
+	}
+	li:nth-child(2) {
+		background: url("book-4.svg") repeat-y center;
+				background-size: 13em 500%;
+		}
+		li:nth-child(3) {
+			background: url("book-5.svg") repeat-y center;
+				background-size: 13em 400%;
+		}
+		li:nth-child(4) {
+			background: url("book-3.svg") repeat-y center;
+				background-size: 13em 400%;
+		}
+		li:nth-child(5) {
+			background: url("book-6.svg") repeat-y center;
+				background-size: 13em 400%;
+		}
+		li:nth-child(6) {
+			background: url("book-7.svg") repeat-y center;
+				background-size: 13em 400%;
+		}
+		li:nth-child(7) {
+			background: url("book-8.svg") repeat-y center;
+				background-size: 13em 400%;
+		}
+		li:nth-child(8) {
+			background: url("book-9.svg") repeat-y center;
+				background-size: 13em 400%;
+		}
+}
+.design-archives { grid-area: archives;
+	//book backgrounds
+	li:nth-child(1) {
+		background: url("book-7.svg") repeat-y center;
+				background-size: 13em 250%;
+	} 
+	li:nth-child(2) {
+		background: url("book-5.svg") repeat-y center;
+				background-size: 13em 250%;
+	}
+}
+.zen-resources { grid-area: resources; 
+	//book backgrounds
+	li:nth-child(1) {
+		background: url("book-8.svg") repeat-y center;
+				background-size: 13em 400%;
+	}
+	li:nth-child(2) {
+		background: url("book-3.svg") repeat-y center;
+				background-size: 13em 500%;
+	}
+	li:nth-child(3) {
+		background: url("book-9.svg") repeat-y center;
+				background-size: 13em 870%;
+	}
+	li:nth-child(4) {
+		background: url("book-4.svg") repeat-y center;
+				background-size: 13em 500%;
+	}
+	li:nth-child(5) {
+		background: url("book-6.svg") repeat-y center;
+				background-size: 13em 900%;
+	}
+}
 //.design-name { font-size: medium; }
 //.design-selection { font-size: xx-small; }
+
+
 
 @media only screen and (max-width: 425px)
 {
