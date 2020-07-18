@@ -1,14 +1,11 @@
 
 .summary {
-	display: block;
 	width: 100%;
 	margin: 0;
-  padding: 5px;
-  font-size: 14px;
+  	padding: 5px;
 }
 
 .summary a:hover {
   text-decoration: none;
-  font-size: 18px;
-  color: white;
+  color: $color-2;
 }
